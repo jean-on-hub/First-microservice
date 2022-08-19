@@ -1,10 +1,9 @@
 install:
-    #install commands
-    # pip install pipenv
     pip install -r requirements.txt
-lint:
-    #flake8 or #pylint
+format:
+    #format code
 test:
     #test
 deploy:
     #deploy
+all: install lint deploy test
