@@ -12,5 +12,7 @@ test:
     #test
 deploy:
     #deploy
+build:
+	#build container
 all: 
 	install lint deploy test
