@@ -9,10 +9,9 @@ lint:
     #flake8 or #pylint
 	pylint --disable=R,C *.py mylib/*.py
 test:
-	python -m pytest -vv --cov = mylib test_logic.py
+	python -m pytest -vv --cov=mylib test_logic.py
 deploy:
     #deploy
 build:
 	# build container
-all: 
-	install lint deploy test
+all: install lint test  deploy
