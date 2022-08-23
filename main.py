@@ -3,6 +3,7 @@ from fastapi import FastAPI
 import uvicorn
 from mylib.logic import search_wiki, wiki as wikilogic
 
+
 app = FastAPI()
 
 

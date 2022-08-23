@@ -27,7 +27,7 @@ def test_read_phrase():
 #     assert response.status_code == 200
 #     assert response.json() == {
 #         "result": [
-#             'John Eudes',           'Jean-Eudes Maurice',           'Eudes',            'Collège Jean-Eudes',            'Jean-Eudes Aholou',            'Jean-Eudes Dubé',            'Jean Eudes Demaret',            'August 19',   
+#             'John Eudes',           'Jean-Eudes Maurice',           'Eudes',            'Collège Jean-Eudes',            'Jean-Eudes Aholou',            'Jean-Eudes Dubé',            'Jean Eudes Demaret',            'August 19',
 #          'Mariology of the saints',            'Jean-Eudes Lauristin'
 #         ]
 #     }
