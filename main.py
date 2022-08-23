@@ -1,4 +1,4 @@
-from unittest import result
+# from unittest import result
 from fastapi import FastAPI
 import uvicorn
 from mylib.logic import search_wiki, wiki as wikilogic
@@ -14,12 +14,13 @@ async def root():
 @app.get("/search/{value}")
 async def search(value: str):
     """Page to search in wikipedia"""
+    
     result = search_wiki(value)
     return {"result": result}
 
 
 @app.get("wiki/{name}")
-async def search(name: str):
+async def wiki(name: str):
     """retreive wikipedia page"""
 
     answer = wikilogic(name)
